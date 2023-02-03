@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  cdemo:
+    image: cdemo
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: 'no'
+    volumes:
+      - ./source:/home/projects
